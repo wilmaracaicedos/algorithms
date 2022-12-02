@@ -1,3 +1,7 @@
 export function palindrome(str: string) {
-  return true;
+  let acum = "";
+  for (const character of str) {
+    acum = character + acum;
+  }
+  return str === acum;
 }
